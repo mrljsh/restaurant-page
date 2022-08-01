@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,300&family=Tangerine:wght@400;700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 3.5em;
+}
+
+nav ul {
+    margin: 1rem 0;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+}
+
+
+main {
+    flex: 1;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: rgba(31, 41, 55, 0.4);
+    color: white;
+}
+
+footer p > a {
+    appearance: none;
+    text-decoration: none;
+}
+
+footer p > a:visited {
+    color: white;
+}
+
+footer p > a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
