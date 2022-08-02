@@ -1,5 +1,6 @@
 export default function createHome() {
     const contentDiv = document.getElementById('content');
+    contentDiv.textContent = "";
 
     const homeHeading = createElementWithID("h1", "RestaurantBar", "homeHeading");
     contentDiv.appendChild(homeHeading);

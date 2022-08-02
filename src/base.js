@@ -1,3 +1,6 @@
+import createHome from "./home";
+import createMenu from "./menu";
+
 export default function createBasePage(){
     console.log("Called createBasePage")
     createNav();
@@ -31,11 +34,21 @@ const createNavLinks = () => {
     
     const homeLink = document.createElement('li');
     homeLink.textContent = "Home";
-    homeLink.classList.add('menu-link');
+    homeLink.classList.add('menu-link', 'active');
+    homeLink.addEventListener('click', (e) => {
+        createHome();
+        activeLink(e.target);
+        console.log(e.target);
+    })
+
 
     const menuLink = document.createElement('li');
     menuLink.textContent = "Menu";
     menuLink.classList.add('menu-link');
+    menuLink.addEventListener('click', (e) => {
+        createMenu();
+        activeLink(e.target);
+    })
 
     const contactLink = document.createElement('li');
     contactLink.textContent = "Contact";
@@ -46,6 +59,16 @@ const createNavLinks = () => {
     unorderedList.appendChild(contactLink);
 
     return unorderedList;
+}
+
+const activeLink = (linkIndex) => {
+    const links = document.querySelectorAll('.menu-link');
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
+    
+    linkIndex.classList.add('active');
+
 }
 
 const createMain = () => {
