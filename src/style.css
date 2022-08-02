@@ -75,6 +75,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    transition: 0.3s;
 }
 
 #homeHeading {
@@ -104,11 +105,14 @@ main {
     color: white;
     background: rgba(0, 0, 0, 0.6);
     margin: 36px;
+    transition: 0.4s;
 }
 
 .menuButton:hover {
     border: 2px solid var(--golden-yellow);
     cursor: pointer;
+    background-color: var(--golden-yellow);
+    transition: 0.7s;
 }
 
 footer {

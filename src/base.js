@@ -10,7 +10,7 @@ export default function createBasePage(){
 
 const createNav = () => {
     const nav = document.createElement('nav');
-    const heading = createNavHeading("Restaurant bar");
+    const heading = createNavHeading("RestaurantBar");
     const navList = createNavLinks();    
 
     

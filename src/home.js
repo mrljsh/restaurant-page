@@ -11,6 +11,10 @@ export default function createHome() {
 
     const menuButton = createElement("button", "OUR MENU");
     menuButton.classList.add('menuButton');
+    menuButton.addEventListener('click', () => {
+        const links = document.querySelectorAll('.menu-link');
+        links[1].click();
+    })
     contentDiv.appendChild(menuButton);
 }
 
