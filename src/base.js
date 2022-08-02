@@ -27,15 +27,23 @@ const createNavHeading = (name) => {
 }
 
 const createNavLinks = () => {
-    const listItems = ["Home", "Menu", "Contact"];
-
     const unorderedList = document.createElement('ul');
     
-    for(const l in listItems){
-        const listViewItem = document.createElement('li');
-        listViewItem.textContent = listItems[l];
-        unorderedList.appendChild(listViewItem);
-    }
+    const homeLink = document.createElement('li');
+    homeLink.textContent = "Home";
+    homeLink.classList.add('menu-link');
+
+    const menuLink = document.createElement('li');
+    menuLink.textContent = "Menu";
+    menuLink.classList.add('menu-link');
+
+    const contactLink = document.createElement('li');
+    contactLink.textContent = "Contact";
+    contactLink.classList.add('menu-link');
+    
+    unorderedList.appendChild(homeLink);
+    unorderedList.appendChild(menuLink);
+    unorderedList.appendChild(contactLink);
 
     return unorderedList;
 }
