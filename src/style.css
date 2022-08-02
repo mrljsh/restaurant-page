@@ -43,7 +43,7 @@ nav ul {
     padding: 0;
 }
 
-.menu-link {
+.nav-link {
     display: inline;
     margin: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -51,12 +51,12 @@ nav ul {
     text-transform: uppercase;
 }
 
-.menu-link:hover {
+.nav-link:hover {
     cursor:pointer;
     text-decoration: underline;
 }
 
-.menu-link.active {
+.nav-link.active {
     color: var(--golden-yellow);
     text-decoration: underline;
 }

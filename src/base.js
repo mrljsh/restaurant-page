@@ -34,7 +34,7 @@ const createNavLinks = () => {
     
     const homeLink = document.createElement('li');
     homeLink.textContent = "Home";
-    homeLink.classList.add('menu-link', 'active');
+    homeLink.classList.add('nav-link', 'active');
     homeLink.addEventListener('click', (e) => {
         createHome();
         activeLink(e.target);
@@ -44,7 +44,7 @@ const createNavLinks = () => {
 
     const menuLink = document.createElement('li');
     menuLink.textContent = "Menu";
-    menuLink.classList.add('menu-link');
+    menuLink.classList.add('nav-link');
     menuLink.addEventListener('click', (e) => {
         createMenu();
         activeLink(e.target);
@@ -52,7 +52,7 @@ const createNavLinks = () => {
 
     const contactLink = document.createElement('li');
     contactLink.textContent = "Contact";
-    contactLink.classList.add('menu-link');
+    contactLink.classList.add('nav-link');
     
     unorderedList.appendChild(homeLink);
     unorderedList.appendChild(menuLink);
@@ -62,7 +62,7 @@ const createNavLinks = () => {
 }
 
 const activeLink = (linkIndex) => {
-    const links = document.querySelectorAll('.menu-link');
+    const links = document.querySelectorAll('.nav-link');
     links.forEach(link => {
         link.classList.remove('active');
     });
