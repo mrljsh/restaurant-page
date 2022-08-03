@@ -115,7 +115,7 @@ main {
     transition: 0.7s;
 }
 
-.menu-container {
+.content-container {
     width: 960px;
     background-color: white;
     padding: 16px;
@@ -124,13 +124,13 @@ main {
     color: black;
 }
 
-.menu-container > h2 {
+.content-container > h2 {
     align-self: center;
     font-size: 2rem;
     margin: 8px;
 }
 
-.menu-container > hr:first-of-type {
+.content-container > hr:first-of-type {
     border: 0;
     border-top: 1px dotted black;
 }

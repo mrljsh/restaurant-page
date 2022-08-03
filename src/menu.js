@@ -4,7 +4,7 @@ export default function createMenu() {
     contentDiv.textContent = "";
 
     const menuDiv = document.createElement('div');
-    menuDiv.classList.add('menu-container');
+    menuDiv.classList.add('content-container');
 
     const menuHeading = document.createElement('h2');
     menuHeading.textContent = "OUR MENU";

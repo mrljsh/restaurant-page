@@ -1,8 +1,8 @@
+import createContact from "./contact";
 import createHome from "./home";
 import createMenu from "./menu";
 
 export default function createBasePage(){
-    console.log("Called createBasePage")
     createNav();
     createMain();
     createFooter();
@@ -38,7 +38,6 @@ const createNavLinks = () => {
     homeLink.addEventListener('click', (e) => {
         createHome();
         activeLink(e.target);
-        console.log(e.target);
     })
 
 
@@ -53,6 +52,10 @@ const createNavLinks = () => {
     const contactLink = document.createElement('li');
     contactLink.textContent = "Contact";
     contactLink.classList.add('nav-link');
+    contactLink.addEventListener('click', (e) => {
+        createContact();
+        activeLink(e.target);
+    })
     
     unorderedList.appendChild(homeLink);
     unorderedList.appendChild(menuLink);
