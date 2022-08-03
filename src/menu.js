@@ -15,6 +15,7 @@ export default function createMenu() {
     const breakfast = Breakfast();
     menuDiv.appendChild(breakfast);
     menuDiv.appendChild(MainDishes());
+    menuDiv.append(Desserts());
 
     contentDiv.appendChild(menuDiv);
 }
@@ -80,6 +81,18 @@ const MainDishes = () => {
     mainDishes.append(steak, chicken, curryChicken, grilledSalmon);
 
     return mainDishes;
+}
+
+const Desserts = () => {
+    const desserts = createMenuCategory("Desserts");
+
+    const pancakes = createMenuItem("Pancakes with cream", 8);
+    const cheesecake = createMenuItem("Blueberry Cheesecake", 6);
+    const icecream = createMenuItem("Homemade ice cream", 6);
+
+    desserts.append(pancakes, cheesecake, icecream);
+
+    return desserts;
 }
 
 
