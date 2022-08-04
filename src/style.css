@@ -130,6 +130,17 @@ main {
     margin: 8px;
 }
 
+.content-container > span {
+    align-self: center;
+    text-align:center;
+    margin: 16px;
+}
+
+.content-container > .google-map {
+    align-self: center;
+    margin: 16px;
+}
+
 .content-container > hr:first-of-type {
     border: 0;
     border-top: 1px dotted black;
